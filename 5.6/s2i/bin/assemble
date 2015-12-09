@@ -21,7 +21,7 @@ fi
 
 #symfony specific
 mkdir -p ./app/cache/prod
-
+cp -a /opt/app-root/ext/.htaccess ./
 # Fix source directory permissions
 chgrp -R 0 ./
 chmod -R g+rw ./
