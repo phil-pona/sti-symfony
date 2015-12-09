@@ -22,5 +22,5 @@ COPY ./contrib/ /opt/app-root
 # In order to drop the root user, we have to make some directories world
 # writeable as OpenShift default security model is to run the container under
 # random UID.
-RUN cp -a /opt/app-root/etc/php.ini.template /etc/opt/rh/rh-php56/php.ini && \
+RUN cp -a /opt/app-root/etc/php.ini.template /etc/opt/rh/rh-php56/php.ini
 
